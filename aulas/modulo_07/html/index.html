@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="devplay treinamento html">
+            <meta name="keywords" content="devplay, treinamento, html">
+            <meta name="author" content="Peterson">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" href="https://d335luupugsy2.cloudfront.net/cms/files/184485/1593530635/$xfefnczgzb">
+            <title>Treinamento Devplay</title>
+        </head>
+    <body bgcolor="#777">
+        <table width="980px" align="center" border="1" bgcolor="#306f92">
+            <tr>
+                <td bgcolor="#000">
+                    <p align="center">
+                        <img src="img/copaocerveja.jpg" width="150px" alt="logo Devplay" title="logo Devplay">
+                    </p>
+                </td>
+                <td>
+                    <h1 align="center">Página com HTML puro.</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h2 align="center">Estruturação com tabelas</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top">
+                    <!-- unordered list -->
+                    <ul>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                        <li><a href="#">Menu 4</a></li>
+                        <li><a href="#">Menu 5</a></li>
+                    </ul>
+                    <!-- ordered list -->
+                    <ol>
+                        <li><a href="#">Menu 1</a></li>
+                        <li><a href="#">Menu 2</a></li>
+                        <li><a href="#">Menu 3</a></li>
+                        <li><a href="#">Menu 4</a></li>
+                        <li><a href="#">Menu 5</a></li>
+                    </ol>
+                </td>
+                <!-- end menu -->
+                <td>
+                    <h3 align="left">Formulário</h3>
+                    <form action="#" method="" enctype="multipart/form-data">
+                        <table width="100%">
+                            <tr>
+                                <td align="right">Nome: </td>
+                                <td>
+                                    <input type="text" name="nome" id="nome" placeholder="Digite aqui o seu nome completo" maxlength="30" size="100" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">E-mail: </td>
+                                <td>
+                                    <input type="email" name="email" id="email" placeholder="Seu e-mail" size="50" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><i>Nascimento:</i> </td>
+                                <td><input type="date" name="idade" id="idade" placeholder="Idade" size="30" required /></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><strong>Assunto:</strong> </td>
+                                <td>
+                                    <select name="assunto" id="assunto" multiple>
+                                        <option value="">[- Selecione um assunto -]</option>
+                                        <option value="Opção 1">Opção 1</option>
+                                        <option value="2">Opção 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">Assunto 2: </td>
+                                <td>
+                                    <select name="assunto" id="assunto" disabled>
+                                        <option value="">[- Selecione um assunto -]</option>
+                                        <option value="1">Opção 1</option>
+                                        <option value="2">Opção 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">Selecione</td>
+                                <td>
+                                    <select  name="cars" id="cars">
+                                    <optgroup label="Swedish Cars">
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                    </optgroup>
+                                    <optgroup label="German Cars">
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">Sua foto: </td>
+                                <td><input type="file" name="foto" id="foto" required /></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Sexo: </td>
+                                <td><input type="radio" name="sexo" value="M" /> Masculino <input type="radio" name="sexo" value="F" /> Feminino
+                                    <input type="radio" name="sexo" value="ELA" /> Ela</td>
+                            </tr>
+                            <tr>
+                                <td align="right">Linguagens: </td>
+                                <td>
+                                    <input type="checkbox" name="linguagens" value="PHP" /> PHP 
+                                    <input type="checkbox" name="linguagens" value="JS" /> JS
+                                    <input type="checkbox" name="linguagens" value="LARAVEL" /> LARAVEL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">Mensagem: </td>
+                                <td><textarea name="mensagem" id="mensagem" placeholder="Mensagem" cols="50"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><button name="btn-enviar" id="btn-enviar" type="submit">Enviar</button></td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <hr>
+
+                    <form action="/action_page.php">
+                        <fieldset>
+                          <legend>Minha legenda para o formulário:</legend>
+                          <label for="fname">Primeiro name:</label>
+                          <input type="text" id="fname" name="fname"><br><br>
+                          <label for="lname">Último name:</label>
+                          <input type="text" id="lname" name="lname"><br><br>
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email"><br><br>
+                          <label for="birthday">Nascimento:</label>
+                          <input type="date" id="birthday" name="birthday"><br><br>
+                          <input type="submit" name="botao" value="Enviar Formulário">
+                        </fieldset>
+                    </form>
+
+                    <h3>Vídeos</h3>
+
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dkqyyUTCMUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/i7IIYIFljZM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dkqyyUTCMUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dkqyyUTCMUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Aulas Devplay</h1>
+                    <label for="file">Em progresso:</label>
+                    <progress id="file" value="17" max="100">17%</progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Dados</h1>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Sum</td>
+                                <td>$180</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h4>Justificado</h4>
+                    <p align="justify">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam saepe debitis fugiat, alias velit consectetur omnis quae aliquid atque in, minus harum eveniet! Odit vel excepturi veritatis quam facere voluptate?
+                    </p>
+                    <br>
+                    <h4>Centralizado</h4>
+                    <p align="center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur cumque aut ipsa id cupiditate eius provident architecto expedita reprehenderit, sed tempore, quo nostrum amet? Molestias voluptates laboriosam expedita vero.
+                    </p>
+                    <br>
+                    <h4>Direita</h4>
+                    <p align="right">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores maiores veniam iusto sequi ipsam corporis beatae, vel quas fugit error inventore accusamus at nostrum eius, quia reprehenderit ullam praesentium!
+                    </p>
+                    <br>
+                    <h4>Esquerda</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde. Tempora veniam nisi ut dignissimos! Error blanditiis quibusdam laboriosam? Nihil dolor dicta esse vero quo. Exercitationem minima optio possimus quia.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    Documentação Html em: <a href="https://www.w3schools.com" title="w3Schools" target="_blank">W3Schools</a> ou envie um e-mail para <a href="mailto:contato@devplay.com.br">contato@devplay.com.br</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <p>A tag Span não quebra linha <span style="color: green;">green</span> eyes.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h1 align="center">Meu rodapé</h1>
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>
