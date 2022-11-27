@@ -1,0 +1,17 @@
+nav {
+    background-color: var(--clear-color);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo img {
+    height: 4rem;
+    margin: 1rem;
+}
+
+nav a {
+    margin: .35rem;
+    text-decoration: none;
+}

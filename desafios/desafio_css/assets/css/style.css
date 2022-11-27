@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url(nav_menu.css);
+@import url(header.css);
+@import url(videos.css);
 
 :root {
     font-family: 'Inter', sans-serif;
@@ -18,31 +21,4 @@ body {
     background-color: var(--dark_color);
     height: auto;
     width: 100%;
-}
-
-.container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-header {
-    background-color: var(--clear-color);
-    display: flex;
-    flex-direction: row;
-}
-
-.logo img {
-    height: 4rem;
-    margin: 1rem;
-}
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    margin: .35rem;
-    text-decoration: none;
 }
