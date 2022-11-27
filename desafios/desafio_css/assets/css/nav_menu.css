@@ -1,17 +1,47 @@
 nav {
+    align-items: center;
     background-color: var(--clear-color);
     display: flex;
-    align-items: center;
+    height: 5rem;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
 }
 
 .logo img {
-    height: 4rem;
+    height: 3.5rem;
     margin: 1rem;
 }
 
-nav a {
-    margin: .35rem;
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu a {
+    color: var(--text-color);
+    display: flex;
+    font-size: 1.1rem;
+    margin: 0 1.1rem 0 0;
     text-decoration: none;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid var(--text-color);
+    transform: scale(1.1);
+}
+
+.menu .btn {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 .5rem 0 0;
+    box-shadow: 10px var(--dark-color);
+}
+
+.menu .btn:hover {
+    box-shadow:  0 0 .35rem .025rem var(--paleblue);
+    transform: scale(1.05);
 }
