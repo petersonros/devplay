@@ -2,6 +2,10 @@
 @import url(nav_menu.css);
 @import url(header.css);
 @import url(videos.css);
+@import url(about.css);
+@import url(skill.css);
+@import url(experience.css);
+@import url(footer.css);
 
 :root {
     font-family: 'Inter', sans-serif;

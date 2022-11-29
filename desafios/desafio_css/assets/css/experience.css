@@ -1,0 +1,147 @@
+#experience {
+    align-items: center;
+    background: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+    width: 100%;
+}
+
+.experience__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1136px;
+}
+
+.experience__demo {
+    background: #f78733;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 1rem;
+    margin: .3rem;
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.experience__demo:hover {
+    background: #fc4a1a;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.03);
+}
+
+.experience__repo {
+    background: #52658f;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 1rem;
+    margin: .3rem;
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.experience__repo:hover {
+    background: #333a56;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.03);
+}
+
+.experience__link {
+    text-decoration: none;
+}
+
+.experience__image-01 {
+    background-image: url("../image/criptografia.jpeg");
+}
+
+.experience__image-02 {
+    background-image: url("../image/forca.jpeg");
+}
+
+.experience__image-03 {
+    background-image: url("../image/games_senai.jpeg");
+}
+
+.experience__image-04 {
+    background-image: url("../image/7daysofcode.jpeg");
+}
+
+.experience__image-01,
+.experience__image-02,
+.experience__image-03,
+.experience__image-04 {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem #141E27;
+    height: 400px;
+    margin: 2.5rem 0;
+    width: 650px;
+}
+
+.experience__info {
+    align-items: center;
+    height: 200px;
+    width: 330px;
+}
+
+.experience__item-right {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.experience__item-left {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.experience__list {
+    display: flex;
+    flex-direction: column;
+    width: 1136px;
+}
+
+.experience__technology {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.experience_icons {
+    padding: 1.5rem .5rem;
+    width: 2.5rem;
+}
+
+.experience__text {
+    font-size: 1rem;
+    line-height: 1.15rem;
+    text-align: center;
+}
+
+.experience__title {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.35rem;
+    padding: 2rem 0;
+}
+
+.experience__sub-title {
+    font-size: 1.5rem;
+    line-height: 1.85rem;
+    text-align: center;
+}

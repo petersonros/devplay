@@ -1,0 +1,42 @@
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
+
+#contact {
+    align-items: center;
+    color: black;
+    background: var(--corp4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact p {
+    color: var(--cor1);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 1rem 0 1rem;
+}
+
+.footer__media {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__media a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+.footer__media a:hover {
+    text-shadow: 0 0 1rem var(--cor1);
+    transform: scale(1.2);
+}
+
+.footer__media i {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    padding: .75rem .75rem 1.5rem;
+}
+
