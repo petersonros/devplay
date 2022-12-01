@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url(nav_menu.css);
 @import url(header.css);
 @import url(videos.css);
@@ -8,26 +8,61 @@
 @import url(footer.css);
 
 :root {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    --alpha-color: rgba(20, 40, 223, 0.5);
+    --trasnparent-color: rgba(142, 36, 36, .05);
+    --shadow-color: rgba(16, 24, 40, .05);
+    
+    --dark-color: #101828;
+    --shadow: #141E27; 
+
     --bright-color: #EAECF0;
     --border-color: #D0D5DD;
     --clear-color: #F9FAFB;
-    --copyright-color: #98A2B3;
-    --dark-color: #101828;
-    --light-color: #ffffff;
+
     --main-color: #8E2424;
-    --shadow-color: rgba(16, 24, 40, 0.05);
-    --trasnparent-color: rgba(142, 36, 36, .05);
+    
     --text-color: #667085;
     --paleblue: #03989e;
-}
 
-body {
-    background-color: var(--dark_color);
-    height: auto;
-    width: 100%;
+    --light-orange: #f78733;
+    --dark-orange: #fc4a1a;
+    --bkg-dark: #333a56;
+    --bkg-light: #52658f;
+    --copyright-color: #98A2B3;
+
+    /* cores do logo */
+    --logo-color1: #54dcec;
+    --logo-color2: #84f4c4;
+    --logo-color3: #049c9c;
+    --logo-color4: #747474;
+    --logo-color5: #0c8c55;
+
+    /* cores do logo Adobe */
+    --logoA-color1: #57E3F2;
+    --logoA-color2: #05A6A6;
+    --logoA-color3: #85F2E7;
+    --logoA-color4: #88F2C1;
+    --logoA-color5: #0D0D0D;
+
+    /* cores do logo Adobe */
+    --bkg-color1: #2A3A59;
+    --bkg-color2: #022859;
+    --bkg-color3: #593912;
+    --bkg-color4: #8C8584;
+    --bkg-color5: #403433;
+
+    /* bkg_dev */
+    --dev-text: #91A1F5;
+    --dev-bkg: #18355F;
 }
 
 .container {
-
+    align-items: center;
+    display: flex;
+    height: 5.5rem;
+    justify-content: space-between;
+    width: 1136px;
 }
+

@@ -1,8 +1,40 @@
 .background {
-    background-image: url(/assets/img/developer-bg.jpg);
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 9rem;
+
+	background-image: url(/assets/img/developer-bg.jpg);
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background h1 {
+
+}
+
+.background img {
+	border-radius: 1rem;
+	background-color: var(--alpha-color);
+	height: 200px;
+	width: auto;
+	padding: 1.5rem;
+}
+
+.background p {
+	color: var(--dev-text);
+	border-radius: 1rem;
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+	font-weight: 400;
+	background-color: var(--dev-bkg);
+	height: 200px;
+	width: 500px;
+	padding: 1.5rem;
+	margin: 0 1rem;
+}

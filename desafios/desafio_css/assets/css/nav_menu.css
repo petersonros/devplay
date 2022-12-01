@@ -1,14 +1,17 @@
 nav {
-    align-items: center;
-    background-color: var(--clear-color);
+    background-color: var(--alpha-color);
     display: flex;
-    height: 5rem;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     width: 100%;
 }
 
+.logo {
+    background-color: aliceblue;
+}
+
 .logo img {
+    background-color: aliceblue;
     height: 3.5rem;
     margin: 1rem;
 }
@@ -21,7 +24,7 @@ nav {
 }
 
 .menu a {
-    color: var(--text-color);
+    color: var(--clear-color);
     display: flex;
     font-size: 1.1rem;
     margin: 0 1.1rem 0 0;
@@ -29,19 +32,19 @@ nav {
 }
 
 .menu a:hover {
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--clear-color);
     transform: scale(1.1);
 }
 
 .menu .btn {
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    padding: 5px;
+    border: 1px solid var(--clear-color);
+    border-radius: .5rem;
+    padding: .5rem;
     margin: 0 .5rem 0 0;
-    box-shadow: 10px var(--dark-color);
+    box-shadow: .75rem var(--clear-color);
 }
 
 .menu .btn:hover {
-    box-shadow:  0 0 .35rem .025rem var(--paleblue);
+    box-shadow:  0 0 .35rem .025rem var(--clear-color);
     transform: scale(1.05);
 }
