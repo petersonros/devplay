@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h1 id="meu-h1">
+            Meu primeiro Javascript
+        </h1>
+        <button onclick="mudaCor()" onmouseover="">Clique para mudar de cor</button>
+        <form action="#" method="" enctype="multipart/form-data" id="form">
+            <table width="100%">
+                <tr>
+                    <td align="right">Nome: </td>
+                    <td>
+                        <input type="text" name="nome" alt="Nome completo" id="nome" placeholder="Digite aqui o seu nome completo" maxlength="30" size="100" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">E-mail: </td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail" size="50" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><i>Nascimento:</i> </td>
+                    <td><input type="date" name="nascimento" id="idade" placeholder="Idade" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right"><strong>Assunto:</strong> </td>
+                    <td>
+                        <select name="assunto" id="assunto" multiple>
+                            <option value="">[- Selecione um assunto -]</option>
+                            <option value="Opção 1">Opção 1</option>
+                            <option value="2">Opção 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Assunto 2: </td>
+                    <td>
+                        <select name="assunto" id="assunto" disabled>
+                            <option value="">[- Selecione um assunto -]</option>
+                            <option value="1">Opção 1</option>
+                            <option value="2">Opção 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Selecione</td>
+                    <td>
+                        <select  name="cars" id="cars">
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Sua foto: </td>
+                    <td><input type="file" name="foto" id="foto"  /></td>
+                </tr>
+                <tr>
+                    <td align="right">Sexo: </td>
+                    <td><input type="radio" name="sexo" value="M" /> Masculino <input type="radio" name="sexo" value="F" /> Feminino
+                        <input type="radio" name="sexo" value="ELA" /> Ela</td>
+                </tr>
+                <tr>
+                    <td align="right">Linguagens: </td>
+                    <td>
+                        <input type="checkbox" name="linguagens" value="PHP" /> PHP 
+                        <input type="checkbox" name="linguagens" value="JS" /> JS
+                        <input type="checkbox" name="linguagens" value="LARAVEL" /> LARAVEL
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Mensagem: </td>
+                    <td><textarea name="mensagem" id="mensagem" placeholder="Mensagem" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><button onclick="validaForm()" name="btn-enviar" id="btn-enviar" type="button">Enviar</button></td>
+                </tr>
+            </table>
+        </form>
+        <script type="text/javascript" src="js.js"></script>
+        <script type="text/javascript">
+            
+          
+            function validaForm(){
+
+                //var selectAssunto = document.getElementById('assunto');
+
+            
+               var elements = document.getElementById("form").elements;
+
+                for (var i = 0, element; element = elements[i++];) {
+                    console.log(element.type);
+                    if ((element.type === "text" || 
+                        element.type === "email" ||
+                        element.type === "date"  || 
+                        element.type === "select-multiple") &&
+                        element.value === ""){
+                        alert("O campo " + element + " está vazio.");
+                    }
+                }
+                
+                return false;
+
+            }
+
+            
+            
+
+            /*var nome1  = 'Marcelo Augusto Souza Rocha';
+            var idade1 = 28; 
+            var nome2  = 'Brunão Supremo Dev';
+            var idade2 = 27;
+            var nome3  = 'Ninja Gaiden';
+            var idade3 = 27;*/
+
+            /*
+            0 == '' //true
+            '' == 0 //false
+            */
+
+            /*onsole.log(eval(idade1 + idade2));
+
+            nome4      = 'Marcela Tobal';
+            idade      = 29;
+            /*
+                == igualdade
+                === exatamente igual
+                >  maior
+                <  menor 
+                <= menor igual
+                >= maior igual
+                !  negacao
+                != nao igual
+                && = e
+                || = ou
+            */
+            /*if(nome1 == nome4){
+                alert('Nome '+nome1+' é igual ao nome '+nome4);
+            }else if(idade1 > idade2){
+                alert('Idade '+idade1+' é maior que '+idade2);
+            }else{
+                alert('Nenhuma das condicoes acima retornaram true');
+            }
+
+
+            /*contador = 0;
+            while(contador < 5){
+                alert('Contador está na posição: '+contador);
+                contador++;
+            }
+
+            for(let i = 0; i<2; i++){
+                alert('i está na posição: '+i);
+            }*/
+
+            /*var exibeMensagem = function(){
+                if(true){
+                    var escopoFuncao = 'DevPlay é o melhor';
+                    var escopoBloco  = 'Qualquer coisa é o melhor';
+
+                    console.log(escopoBloco);
+                }
+
+                console.log(escopoFuncao);
+                console.log(escopoBloco);
+            }
+
+            exibeMensagem();*/
+
+        </script>
+    </body>
+</html>
