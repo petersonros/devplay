@@ -1,11 +1,4 @@
 .background {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	flex-wrap: wrap;
-	padding-top: 9rem;
-
 	background-image: url(/assets/img/developer-bg.jpg);
 	min-height: 100vh;
 	background-attachment: fixed;
@@ -14,11 +7,7 @@
 	background-size: cover;
 }
 
-.background h1 {
-
-}
-
-.background img {
+/* .background img {
 	border-radius: 1rem;
 	background-color: var(--alpha-color);
 	height: 200px;
@@ -37,4 +26,4 @@
 	width: 500px;
 	padding: 1.5rem;
 	margin: 0 1rem;
-}
+} */
