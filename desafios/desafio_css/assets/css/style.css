@@ -53,17 +53,9 @@
 
 .container {
     align-items: center;
-    display: inline-flex;
-    height: 5.5rem;
-    justify-content: space-between;
-    width: 1136px;
-}
-
-main {
-    align-items: center;
+    display: flex;
     flex-direction: column;
-    display: inline-flex;
-    height: 5.5rem;
-    justify-content: space-between;
-    width: 1136px;
+    height: auto;
+    justify-content: center;
+    width: 100%;
 }
