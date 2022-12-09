@@ -10,11 +10,22 @@
 }
 
 .header__container {
-	align-items: flex-end;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 1136px;
+}
+
+.card {
+	border-radius: 1rem;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	justify-content: space-around;
-	width: 1136px;
+	background-color: var(--alpha-color);
+	height: 568px;
+	width: 568px;
 }
 
 .background img {

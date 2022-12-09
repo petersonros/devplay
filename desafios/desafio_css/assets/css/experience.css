@@ -1,3 +1,19 @@
+#portfolio {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.35rem;
+    padding: 2rem 0;
+}
+
+.experience__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1136px;
+}
+
 #experience {
     align-items: center;
     background: var(--cor1);
@@ -8,13 +24,6 @@
     width: 100%;
 }
 
-.experience__container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1136px;
-}
 
 .experience__demo {
     background: #f78733;
@@ -130,14 +139,6 @@
     font-size: 1rem;
     line-height: 1.15rem;
     text-align: center;
-}
-
-.experience__title {
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 2.35rem;
-    padding: 2rem 0;
 }
 
 .experience__sub-title {
