@@ -1,5 +1,5 @@
 nav {
-    background-color: var(--alpha-color);
+    background-color: var(--dev-bkg);
     display: flex;
     justify-content: center;
     position: fixed;

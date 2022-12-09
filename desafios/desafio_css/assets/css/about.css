@@ -1,19 +1,31 @@
-#about {
+.about__container {
+    align-items: center;
+    background-color: var(--dev-bkg);
+    border-radius: 1rem;
     display: flex;
-    font-size: 2rem;
-    font-weight: 500;
+    height: auto;
     justify-content: center;
-    line-height: 2.5rem;
-    padding: 5rem 0 1rem 0;
+    width: 936px;
 }
 
-.about img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
+.about__container img {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 50%;
+    height: 200px;
+    margin: 1rem;
+    width: 200px;
 }
 
+.about__container p {
+    color: var(--bright-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    height: fit-content;
+    line-height: 1.75rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 580px;
+}

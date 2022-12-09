@@ -35,8 +35,6 @@
 }
 
 .texto {
-	background-color: var(--alpha-color);
-	border-radius: 1rem;
 	color: var(--bright-color);
 	font-size: 1.25rem;
 	font-weight: 500;
