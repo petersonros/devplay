@@ -18,28 +18,32 @@
 }
 
 .card {
-	border-radius: 1rem;
+	border-radius: .75rem;
+	box-shadow: 0 0 1rem .25rem var(--bright-color);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	background-color: var(--alpha-color);
-	height: 568px;
-	width: 568px;
+	background-color: var(--dev-bkg);
+	height: auto;
+	padding: .5rem .25rem;
+	width: 22.5rem;
 }
 
-.background img {
-	border-radius: 50%;
-	height: 50%;
-	width: 50%;
+.card img {
+	background-color: var(--bright-color);
+	border-radius: .75rem;
+	box-shadow: 0 .25rem .5rem .25rem var(--dark-color);
+	height: auto;
+	padding: .75rem;
+	width: 20rem;
 }
 
 .texto {
 	color: var(--bright-color);
 	font-size: 1.25rem;
-	font-weight: 500;
-	height: 11.25rem;
+	font-weight: 400;
 	line-height: 2.25rem;
-	padding: 1rem;
-	width: 500px;
+	margin: .75rem 0 0 0;
+	padding: .5rem .75rem;
 }
