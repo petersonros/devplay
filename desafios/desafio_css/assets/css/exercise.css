@@ -130,9 +130,10 @@
     justify-content: center;
 }
 
-.exercise_icons {
+.exercise_icon {
+    height: auto;
     padding: 1.5rem .5rem;
-    width: 2.5rem;
+    width: 3.5rem;
 }
 
 .exercise__text {
