@@ -37,6 +37,15 @@
     justify-content: space-between;
 }
 
+.exercise__item-right .exercise__img {
+    background: #52658f;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem #141E27;
+    height: 400px;
+    margin: 2.5rem 0;
+    width: 650px;
+}
+
 .exercise__item-left {
     align-items: center;
     display: flex;
@@ -44,10 +53,8 @@
     justify-content: space-between;
 }
 
-.exercice__item-right img {
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.exercise__item-left .exercise__img {
+    background: #333a56;
     border-radius: .5rem;
     box-shadow: 0 0 .25rem #141E27;
     height: 400px;
