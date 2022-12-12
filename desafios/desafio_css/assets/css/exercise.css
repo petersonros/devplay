@@ -1,17 +1,9 @@
-#atividades {
+#exercise {
     color: black;
     font-size: 2rem;
     font-weight: bold;
     line-height: 2.35rem;
     padding: 2rem 0;
-}
-
-.exercise__container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1136px;
 }
 
 #exercise {
@@ -24,6 +16,75 @@
     width: 100%;
 }
 
+.exercise__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1136px;
+}
+
+.exercise__list {
+    display: flex;
+    flex-direction: column;
+    width: 1136px;
+}
+
+.exercise__item-right {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exercise__item-left {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.exercice__item-right img {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem #141E27;
+    height: 400px;
+    margin: 2.5rem 0;
+    width: 650px;
+}
+
+.exercise__info {
+    align-items: center;
+    height: 200px;
+    width: 330px;
+}
+
+.exercise__info h3 {
+    font-size: 1.5rem;
+    line-height: 1.85rem;
+    text-align: center;
+}
+
+.exercise__info p {
+    font-size: 1rem;
+    line-height: 1.15rem;
+    text-align: center;
+}
+
+.exercise__technology {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.exercise_icon {
+    height: auto;
+    padding: 1.5rem .5rem;
+    width: 3.5rem;
+}
 
 .exercise__demo {
     background: #f78733;
@@ -67,83 +128,4 @@
     text-decoration: none;
 }
 
-.exercise__image-01 {
-    background-image: url("../image/criptografia.jpeg");
-}
 
-.exercise__image-02 {
-    background-image: url("../image/forca.jpeg");
-}
-
-.exercise__image-03 {
-    background-image: url("../image/games_senai.jpeg");
-}
-
-.exercise__image-04 {
-    background-image: url("../image/7daysofcode.jpeg");
-}
-
-.exercise__image-01,
-.exercise__image-02,
-.exercise__image-03,
-.exercise__image-04 {
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: .5rem;
-    box-shadow: 0 0 .25rem #141E27;
-    height: 400px;
-    margin: 2.5rem 0;
-    width: 650px;
-}
-
-.exercise__info {
-    align-items: center;
-    height: 200px;
-    width: 330px;
-}
-
-.exercise__item-right {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.exercise__item-left {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.exercise__list {
-    display: flex;
-    flex-direction: column;
-    width: 1136px;
-}
-
-.exercise__technology {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.exercise_icon {
-    height: auto;
-    padding: 1.5rem .5rem;
-    width: 3.5rem;
-}
-
-.exercise__text {
-    font-size: 1rem;
-    line-height: 1.15rem;
-    text-align: center;
-}
-
-.exercise__sub-title {
-    font-size: 1.5rem;
-    line-height: 1.85rem;
-    text-align: center;
-}
