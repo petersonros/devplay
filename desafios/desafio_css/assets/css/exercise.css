@@ -15,12 +15,13 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1136px;
 }
 
-.exercise__info {
-    align-items: flex-end;
+.exercise__box {
+    align-items: flex-start;
     background: var(--dev-bkg);
     border-radius: .5rem;
     box-shadow: 0 0 .5rem #141E27;
@@ -33,39 +34,50 @@
     width: 520px;
 }
 
-.exercice__text {
+.exercise__icon___container{
+
+    background-color: #f78733;
+    height: 4rem;
+    width: 4rem;
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.exercise__icon {
+    width: 3.5rem;
+}
+
+.exercise__btn {
+    
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.exercise__text {
     color: var(--clear-color);
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     padding: 0 2rem 0 0;
 }
 
-.exercice__text h3 {
+.exercise__text h3 {
     font-size: 1.5rem;
     line-height: 1.85rem;
     text-align: end;
 }
 
-.exercice__text p {
+.exercise__text p {
     font-size: 1rem;
     line-height: 1.75rem;
     text-align: end;
-}
-
-.exercise__technology {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.exercise__icon {
-    display: flex;
-    justify-content: flex-start;
-    height: auto;
-    padding: 1.5rem .5rem;
-    width: 3.5rem;
 }
 
 .exercise__demo {
@@ -106,6 +118,94 @@
     transform: scale(1.03);
 }
 
-.exercise__link {
+/* inicio do teste de conteudo da caixa de exercicios */
+
+.ex_container {
+    align-items: center;
+    box-shadow: 0 0 .1rem .1rem var(--dev-bkg);
+    border-radius: .5rem;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 32rem;
+}
+
+.ando_app {
+    background-image: url(../img/ando_app.jpeg);
+}
+
+.hf_transportadora {
+    background-image: url(../img/hf_transportadora.jpeg);
+    background-attachment: scroll;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+    border-radius: 1rem;
+    height: 20rem;
+    width: 100%;
+}
+
+.icone_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.icone {
+    height: 3.5rem;
+    padding: .25rem .5rem 0;
+    width: 3.5rem;
+}
+
+.btn_container {
+    color: var(--dev-bkg);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
+}
+
+.btn_repo,
+.btn_demo {
+    border: none;
+    border-radius: .5rem; 
+    color: var(--clear-color);
+    font-size: 1.25rem;
+    font-weight: 400;
     text-decoration: none;
+}
+
+.btn_repo {
+    background-color: #f78733;
+}
+
+.btn_demo {
+    text-align: center;
+    align-items: center;
+    background-color: #f78733;
+    height: 3rem;
+    width: 10rem;
+}
+
+.txt_container {
+    align-items: flex-end;
+    border-bottom: 1px solid #fc4a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.txt_container h3 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+}
+
+.txt_container p {
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
