@@ -123,11 +123,21 @@
 .ex_container {
     align-items: center;
     box-shadow: 0 0 .1rem .1rem var(--dev-bkg);
-    border-radius: .5rem;
+    /* border-radius: .5rem; */
     display: flex;
     height: auto;
     flex-direction: column;
+    margin-bottom: 5rem;
     width: 32rem;
+}
+
+.ex_bkg {
+    background-attachment: initial;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 20rem;
+    width: 100%;
 }
 
 .ando_app {
@@ -136,13 +146,6 @@
 
 .hf_transportadora {
     background-image: url(../img/hf_transportadora.jpeg);
-    background-attachment: scroll;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-    border-radius: 1rem;
-    height: 20rem;
-    width: 100%;
 }
 
 .icone_container {
@@ -153,12 +156,13 @@
 }
 
 .icone {
-    height: 3.5rem;
-    padding: .25rem .5rem 0;
-    width: 3.5rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    width: 2.5rem;
 }
 
 .btn_container {
+    background-color: var(--clear-color);
     color: var(--dev-bkg);
     display: flex;
     align-items: center;
@@ -173,7 +177,7 @@
     border: none;
     border-radius: .5rem; 
     color: var(--clear-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
 }
@@ -184,28 +188,34 @@
 
 .btn_demo {
     text-align: center;
-    align-items: center;
+    background-color: #fc4a1a;
+    padding: .5rem 2rem;
+    margin: 1rem;
+}
+
+.btn_demo:hover {
     background-color: #f78733;
-    height: 3rem;
-    width: 10rem;
+    box-shadow: 0 0 .05rem .05rem #52658f;
+    transform: scale(1.05);
 }
 
 .txt_container {
     align-items: flex-end;
-    border-bottom: 1px solid #fc4a1a;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     height: 5rem;
+    justify-content: center;
     width: 100%;
 }
 
 .txt_container h3 {
     font-size: 1.75rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
+    padding: .5rem 1rem 0 0;
 }
 
 .txt_container p {
     font-size: 1.25rem;
     line-height: 1.5;
+    padding: 0 1rem 1rem 0;
 }
