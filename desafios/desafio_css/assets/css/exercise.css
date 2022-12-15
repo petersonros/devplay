@@ -137,6 +137,13 @@
     width: 100%;
 }
 
+.desafio_php {
+    background-image: url(../img/desafio_php.jpg);
+}
+
+.aula_html {
+    background-image: url(../img/aula_html.jpeg);
+}
 .alura_hangman {
     background-image: url(../img/hangman.jpeg);
 }
@@ -183,8 +190,8 @@
 .btn_demo {
     text-align: center;
     background-color: #fc4a1a;
-    padding: .5rem 2rem;
-    margin: 1rem;
+    padding: .75rem 2rem;
+    margin: 1rem 1rem 1rem 0rem;
 }
 
 .btn_demo:hover {
