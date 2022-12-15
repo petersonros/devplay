@@ -20,26 +20,10 @@
     width: 1136px;
 }
 
-.exercise__box {
-    align-items: flex-start;
-    background: var(--dev-bkg);
-    border-radius: .5rem;
-    box-shadow: 0 0 .5rem #141E27;
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem 0;
-    height: 360px;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 520px;
-}
-
 .exercise__icon___container{
-
     background-color: #f78733;
     height: 4rem;
     width: 4rem;
-
     align-items: flex-start;
     display: flex;
     flex-direction: row;
@@ -51,7 +35,6 @@
 }
 
 .exercise__btn {
-    
     align-items: flex-start;
     display: flex;
     flex-direction: row;
@@ -120,15 +103,28 @@
 
 /* inicio do teste de conteudo da caixa de exercicios */
 
-.ex_container {
+.exercise__box {
     align-items: center;
     box-shadow: 0 0 .1rem .1rem var(--dev-bkg);
-    /* border-radius: .5rem; */
+    border-radius: 1rem;
     display: flex;
     height: auto;
     flex-direction: column;
     margin-bottom: 5rem;
     width: 32rem;
+}
+
+.btn_container {
+    background-color: var(--clear-color);
+    border-bottom: 1px solid #141E27;
+    border-radius: 1rem;
+    color: var(--dev-bkg);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
 }
 
 .ex_bkg {
@@ -137,7 +133,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
     height: 20rem;
+    margin-top: 1rem;
     width: 100%;
+}
+
+.alura_hangman {
+    background-image: url(../img/hangman.jpeg);
+}
+
+.alura_criptografia {
+    background-image: url(../img/alura_criptografia.jpeg);
 }
 
 .ando_app {
@@ -148,28 +153,17 @@
     background-image: url(../img/hf_transportadora.jpeg);
 }
 
-.icone_container {
+.icon_container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
 }
 
-.icone {
+.icon {
     height: 2.5rem;
     padding-left: 1rem;
     width: 2.5rem;
-}
-
-.btn_container {
-    background-color: var(--clear-color);
-    color: var(--dev-bkg);
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: auto;
-    width: 100%;
 }
 
 .btn_repo,
