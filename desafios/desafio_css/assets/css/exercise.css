@@ -20,7 +20,7 @@
     width: 1136px;
 }
 
-.exercise__icon___container{
+.exercise__icon___container {
     background-color: #f78733;
     height: 4rem;
     width: 4rem;
@@ -129,9 +129,9 @@
 
 .ex_bkg {
     background-attachment: initial;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 20rem;
     margin-top: 1rem;
     width: 100%;
@@ -144,6 +144,7 @@
 .aula_html {
     background-image: url(../img/aula_html.jpeg);
 }
+
 .alura_hangman {
     background-image: url(../img/hangman.jpeg);
 }
@@ -176,7 +177,7 @@
 .btn_repo,
 .btn_demo {
     border: none;
-    border-radius: .5rem; 
+    border-radius: .5rem;
     color: var(--clear-color);
     font-size: 1rem;
     font-weight: 400;

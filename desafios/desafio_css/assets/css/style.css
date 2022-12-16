@@ -8,24 +8,24 @@
 @import url(footer.css);
 
 :root {
-    
+
     scroll-behavior: smooth;
-    
+
     font-family: 'Roboto', sans-serif;
 
     --alpha-color: rgba(20, 40, 223, 0.5);
     --trasnparent-color: rgba(142, 36, 36, .05);
     --shadow-color: rgba(16, 24, 40, .05);
-    
+
     --dark-color: #101828;
-    --shadow: #141E27; 
+    --shadow: #141E27;
 
     --bright-color: #EAECF0;
     --border-color: #D0D5DD;
     --clear-color: #F9FAFB;
 
     --main-color: #8E2424;
-    
+
     --text-color: #667085;
     --paleblue: #03989e;
 
