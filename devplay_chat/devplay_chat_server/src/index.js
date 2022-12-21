@@ -1,9 +1,13 @@
 const express = require("express");
 const usersRoutes = require("./routes/users");
 const postsRoutes = require("./routes/posts");
+const logMiddleware = require("./middlewares/log");
 
-const app = express();
 const port = 4000;
+const app = express();
+app.use(logMiddleware());
+app.use(express.json());
+
 
 //   RESTful
 //   Entidades:
@@ -12,7 +16,7 @@ const port = 4000;
 app.use(postsRoutes);
 app.use(usersRoutes);
 app.get("/", (req, res) => {
-    return res.send(`Olá, servidor rodando na porta: ${port}`);
+    return res.status(400).send(`Olá, servidor rodando na porta: ${port}`);
 });
 
 // Iniciando o servidor
