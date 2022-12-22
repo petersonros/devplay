@@ -1,3 +1,5 @@
+const ApiError = require("../utils/errors/apiError");
+
 let users = [];
 let lastId = 0;
 
@@ -12,9 +14,14 @@ const usersServices = {
     },
     findOne(id){
         const user = users.find((user) => user.id === id);
+        if(!user) throw new ApiError("Usuário não encontrado!", 404)
         return user;
     },
     create(params){
+        if(!params.name) throw new ApiError("Nome é obrigatório!", 400);
+        if(!params.email) throw new ApiError("Email é obrigatório!", 400);
+        if(!params.password) throw new ApiError("Senha é obrigatória!", 400);
+
         const newUser = { id: lastId, ...params };
         users.push(newUser);
         lastId++;
