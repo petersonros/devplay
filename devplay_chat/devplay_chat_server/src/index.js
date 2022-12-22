@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(postsRoutes);
 app.use(usersRoutes);
 app.get("/", (req, res) => {
-    return res.status(400).send(`Olá, servidor rodando na porta: ${port}`);
+    return res.json({msg: "Bem vindo!"});
 });
 
 // Iniciando o servidor

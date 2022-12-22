@@ -2,8 +2,13 @@ let users = [];
 let lastId = 0;
 
 const usersServices = {
-    findAll(){
-        return users;
+    findAll(emailFilter){
+        if (!emailFilter) return users;
+
+        console.log(emailFilter);
+        return users.filter((user) => {
+            return user.email.includes(emailFilter);
+        });
     },
     findOne(id){
         const user = users.find((user) => user.id === id);
