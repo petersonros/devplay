@@ -1,19 +1,12 @@
 const { Router } = require("express");
+const usersController = require("../controllers/usersController");
 
 const routes = Router();
 
-const users = [];
-
-routes.get("/users", (req, res) => {
-    return res.json(users);
-});
-
-routes.post("/users", (req, res) => {
-    const user = {
-        nome: "Arthur",
-    };
-    users.push(user);
-    return res.json(user);
-});
+routes.get("/users", usersController.findAll);
+routes.get("/users/:id", usersController.findOne);
+routes.post("/users", usersController.create);
+routes.put("/users/:id", usersController.update);
+routes.delete("/users/:id", usersController.delete);
 
 module.exports = routes;
