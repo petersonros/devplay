@@ -1,0 +1,11 @@
+{"level":"error","message":"Usuário não encontrado!","timestamp":"2022-12-24T14:28:30.825Z"}
+{"level":"info","message":"GET /users/10 404 37 - 5.585 ms\n","timestamp":"2022-12-24T14:28:30.832Z"}
+{"level":"info","message":"Usuário criado! Luke","timestamp":"2022-12-24T14:28:32.909Z","user":{"email":"luke@email.com","id":0,"name":"Luke","password":"Luke123"}}
+{"level":"info","message":"POST /users 200 68 - 9.472 ms\n","timestamp":"2022-12-24T14:28:32.910Z"}
+{"level":"info","message":"DELETE /users/0 200 68 - 0.472 ms\n","timestamp":"2022-12-24T14:28:35.025Z"}
+{"level":"error","message":"Usuário não encontrado!","timestamp":"2022-12-24T14:28:37.236Z"}
+{"level":"info","message":"PUT /users/0 404 37 - 1.709 ms\n","timestamp":"2022-12-24T14:28:37.237Z"}
+{"level":"error","message":"Usuário não encontrado!","timestamp":"2022-12-24T14:28:43.566Z"}
+{"level":"info","message":"DELETE /users/0 404 37 - 1.197 ms\n","timestamp":"2022-12-24T14:28:43.567Z"}
+{"level":"error","message":"Usuário não encontrado!","timestamp":"2022-12-24T14:28:44.679Z"}
+{"level":"info","message":"DELETE /users/0 404 37 - 1.118 ms\n","timestamp":"2022-12-24T14:28:44.681Z"}
