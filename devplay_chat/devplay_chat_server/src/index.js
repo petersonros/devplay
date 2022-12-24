@@ -1,12 +1,12 @@
 const express = require("express");
 const usersRoutes = require("./routes/users");
 const postsRoutes = require("./routes/posts");
-const logMiddleware = require("./middlewares/log");
 const chalk = require("chalk");
+const morgan = require("morgan");
 
 const port = 4000;
 const app = express();
-app.use(logMiddleware());
+app.use(morgan("dev"));
 app.use(express.json());
 
 
