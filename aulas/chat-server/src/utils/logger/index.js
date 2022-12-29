@@ -27,6 +27,7 @@ const logger = winston.createLogger({
                 })
             )
         }),
+
         new winston.transports.DailyRotateFile({
             format: winston.format.combine(
               winston.format.timestamp(),
@@ -40,4 +41,10 @@ const logger = winston.createLogger({
     ],
 });
 
-module.exports = logger;
+const loggerStream = {
+    write(info) {
+      logger.http(info);
+    },
+  };
+
+module.exports = { logger, loggerStream };
