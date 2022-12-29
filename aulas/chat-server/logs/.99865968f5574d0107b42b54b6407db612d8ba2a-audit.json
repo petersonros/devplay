@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\2021-11-22-GitHub\\devplay\\aulas\\chat-server\\logs\\.99865968f5574d0107b42b54b6407db612d8ba2a-audit.json",
+    "files": [
+        {
+            "date": 1672273000624,
+            "name": "D:\\2021-11-22-GitHub\\devplay\\aulas\\chat-server\\logs\\2022-12-28.log",
+            "hash": "e7fd3af3c5b56dff5c75e3bbfa97dc92a403881e89ef290cd5237771656083d4"
+        }
+    ],
+    "hashType": "sha256"
+}
